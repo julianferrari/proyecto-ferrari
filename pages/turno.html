@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Solicitar Turno</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="grillas">
+        <header>
+            <a href="index.html"><img class="banner" src="../assets/images/banner.png" alt="Banner CIMA"/></a>
+            <nav> 
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#seccion_novedades">Novedades</a></li> <!-- Items de la lista -->
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="../index.html#seccion_horarios">Horarios de Atención</a></li>
+                    <li>
+                        <a href="">Trámites</a>
+                        <ul>
+                            <li><a href="turno.html">Turnos</a></li>
+                            <li><a href="presupuesto.html">Presupuesto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        
+        <main class="main-tramite">
+            <section class="cover">
+                <div class="cover-propiedades">
+                    <img src="../assets/images/labo04.jpg" alt="Laboratorio">
+                    <div class="texto-encima">Turnos</div>
+                </div>
+            </section>
+
+            <section class="tramite">
+                <h1>Solicitar Turno</h1>
+                <form class="contenedor-tramite">
+                    <label for="campo_nombre">Nombre y Apellido:</label>
+                    <input name="nombre" type="text" id="campo_nombre" placeholder="Nombre y Apellido">
+                    <label for="campo_dni">Documento:</label>
+                    <input name="dni" type="number" id="campo_dni" placeholder="Sin puntos; solo números">
+                    <label for="campo_tel">Teléfono:</label>
+                    <input name="tel" type="tel" id="campo_tel" placeholder="Ej: +5429112345678">
+                    <label for="campo_mail">E-Mail:</label>
+                    <input name="email" type="email" id="campo_mail" placeholder="ejemplo@gmail.com">
+                    <label for="campo_obra">Obra Social</label>
+                    <select name="obra" id="campo_obra">
+                        <option value="pami">PAMI</option>
+                        <option value="iosfa">IOSFA</option>
+                        <option value="swissmedical">SWISS MEDICAL</option>
+                        <option value="osde">OSDE</option>
+                        <option value="federada">FEDERADA SALUD</option>
+                        <option value="italred">ITALRED</option>
+                        <option value="acasalud">ACA SALUD</option>
+                        <option value="omint">OMINT</option>
+                        <option value="otra">Otra...</option>
+                    </select>
+                    <label for="campo_turno">Elija un Turno</label>
+                    <input name="turno" type="date" id="campo_turno">
+                    <label for="campo_mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="campo_mensaje" cols="30" rows="10" placeholder="Otra información relevante..."></textarea>
+                    <div class="botones"><input type="submit" value="SOLICITAR TURNO">
+                    <input type="reset" value="Borrar Datos"></div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div>
+                <h1>Contacto</h1>
+                <p>CIMA Laboratorio de Análisis Clínicos</p>
+                <p>José Avenente 3647, Ing. White, Bs.As. Argentina</p>
+                <p>Llamar al<a href="tel:+5492914420416"><span>0291-154161378</span></a></p>
+                <p>Escribinos a este<a href="mailto:julianferrari3@gmail.com?subject=Consulta%20de%20un%20paciente"><span>Correo Electrónico</span></a></p>  
+                <div class="redes-sociales">
+                    <a href="https://es-la.facebook.com/" target="__blank"><i class="bi-facebook"></i>Facebook</a>
+                    <a href="https://wa.me/+5492914420416" target="__blank"><i class="bi-whatsapp"></i>Whatsapp</a>
+                    <a href="https://www.instagram.com/" target="__blank"><i class="bi-instagram"></i>Instagram</a>
+                </div>               
+            </div>
+            <div class="topnav">
+                <nav>
+                    <a href="../index.html#seccion_testimonios">Testimonios</a>
+                    <a href="../index.html">Home</a>
+                    <a href="ubicacion.html">¿Cómo llegar?</a>
+                </nav>
+                <p>&copy;<em id="date">CIMA Laboratorio - 2022</em></p>
+            </div>        
+        </footer>
+    </div>
+</body>
+
+</html>

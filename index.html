@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento -->
+<html lang="es">
+
+<head> <!-- Parte privada de comunicacion ebtre el sitio web y el navegador -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Linkeo con el archivo css -->
+    <title>CIMA Laboratorio</title> <!-- Nombre de la solapa-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+</head>
+
+<body>  
+    <div class="grillas">
+        <header>
+            <a href="index.html"><img class="banner" src="./assets/images/banner.png" alt="Banner CIMA"/></a>
+            <nav> <!-- Menu de navegacion -->
+                <ul> <!-- Lista desordenada -->                
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#seccion_novedades">Novedades</a></li> <!-- Items de la lista -->
+                    <li><a href="./pages/galeria.html">Galería</a></li>
+                    <li><a href="#seccion_horarios">Horarios de Atención</a></li>
+                    <li>
+                        <a href="">Trámites</a>
+                        <ul>
+                            <li><a href="./pages/turno.html">Turnos</a></li>
+                            <li><a href="./pages/presupuesto.html">Presupuesto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main>    
+            <section class="cover">
+                <div class="cover-propiedades">
+                    <img src="./assets/images/labo01.jpg" alt="Laboratorio">
+                    <div class="texto-encima">CALIDAD Y PROFESIONALISMO</div>
+                </div>
+            </section>
+
+            <section class="novedades" id="seccion_novedades"> <!--GRID-->
+                <h1>Novedades</h1>                      
+                <div class="contenedor-novedades"> <!--FLEX-->
+                    <article class="caja-novedad"> <!--BOX MOD-->
+                        <h2>¡Más comodidad para vos!</h2>
+                        <img src="./assets/images/noticia.png" alt="noticia">
+                        <p>Podés enviar tu receta por Whatsapp así la vamos autorizando; además te indicamos las condiciones para realizarte el análisis. Escribinos al 291-4161378.</p>
+                    </article>            
+                    <article class="caja-novedad">
+                        <h2>¡Ampliamos nuestros servicios!</h2>
+                        <img src="./assets/images/noticia.png" alt="noticia">
+                        <p>¡Buenas Noticias! CIMA Laboratorio ahora atiende socios de SUPA SALUD. Contactáte con nosotros para más información.</p>
+                    </article>
+                </div>
+                <div class="contenedor-novedades">
+                    <article class="caja-novedad">
+                        <h2>TITULO 3</h2>
+                        <img src="./assets/images/noticia.png" alt="noticia">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis nemo corrupti quis placeat repellendus? Quod, a. Error numquam, tempora quae ab rem veritatis eum distinctio, sit deleniti adipisci optio!</p>
+                    </article>
+                    <article class="caja-novedad">
+                        <h2>TITULO 4</h2>
+                        <img src="./assets/images/noticia.png" alt="noticia">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora excepturi laboriosam animi eos cupiditate, officia non odit dicta beatae ratione fugiat a asperiores vitae ex culpa optio perspiciatis rem.</p>
+                    </article>
+                </div>
+            </section>
+    
+            <section class="testimonios" id="seccion_testimonios">
+                <h1>Testimonios</h1>
+                <div class="contenedor-testimonios">       
+                    <article class="caja-testimonio">
+                        <p>Excelente atención. Muy amables!<span>"Juan Perez"</span></p>
+                    </article>
+                    <article class="caja-testimonio">
+                        <p>Muy buena atención y los resultados están enseguida. Un amor tmb con los abuelos. <span>"Fernanda I."</span></p>
+                    </article>
+                    <article class="caja-testimonio">
+                        <p>Excelente profesional. Se cumplieron todos los protocolos sanitarios. <span>"Pappo Napolitano"</span></p>
+                    </article>
+                </div>
+                <div class="contenedor-testimonios">                            
+                    <a href="https://wa.me/+5492914420416"><i class="bi-whatsapp"></i>Publicá tu Testimonio</a>
+                </div>
+            </section>
+        
+            <section class="horarios" id="seccion_horarios">
+                <h1>Horarios de Atención</h1>
+                <table border="1">
+                    <tr><!-- Fila 0 -->
+                        <th class="celdaColor">Día</th> <!-- Columna 0 -->
+                        <th class="celdaColor">Horario</th> <!-- Columna 1 -->
+                    </tr>
+                    <tr><td>Lunes</td><td>08:00 a 13:00</td></tr>
+                    <tr><td>Martes</td><td>08:00 a 13:00</td></tr>
+                    <tr><td>Miércoles</td><td>08:00 a 13:00</td></tr>
+                    <tr><td>Jueves</td><td>08:00 a 13:00</td></tr>
+                    <tr><td>Viernes</td><td>08:00 a 13:00</td></tr>
+                    <tr><td class="celdaCursiva">Sábado</td><td class="celdaCursiva">Cerrado</td></tr>
+                    <tr><td class="celdaCursiva">Domingo</td><td class="celdaCursiva">Cerrado</td></tr>
+                </table>
+            </section>   
+        </main>
+
+        <footer id="footer">
+            <div>
+                <h1>Contacto</h1>
+                <p>CIMA Laboratorio de Análisis Clínicos</p>
+                <p>José Avenente 3647, Ing. White, Bs.As. Argentina</p>
+                <p>Llamar al<a href="tel:+5492914420416"><span>0291-154161378</span></a></p>
+                <p>Escribinos a este<a href="mailto:julianferrari3@gmail.com?subject=Consulta%20de%20un%20paciente"><span>Correo Electrónico</span></a></p>  
+                <div class="redes-sociales">
+                    <a href="https://es-la.facebook.com/" target="__blank"><i class="bi-facebook"></i>Facebook</a>
+                    <a href="https://wa.me/+5492914420416" target="__blank"><i class="bi-whatsapp"></i>Whatsapp</a>
+                    <a href="https://www.instagram.com/" target="__blank"><i class="bi-instagram"></i>Instagram</a>
+                </div>               
+            </div>
+            <div class="topnav">
+                <nav>
+                    <a href="#seccion_testimonios">Testimonios</a>
+                    <a href="index.html">Home</a>
+                    <a href="./pages/ubicacion.html">¿Cómo llegar?</a>
+                </nav>
+                <p>&copy;<em id="date">CIMA Laboratorio - 2022</em></p>
+            </div>        
+        </footer>
+    </div>
+</body>
+
+</html>
