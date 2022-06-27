@@ -64,6 +64,8 @@ h1{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-shadow: 0px 10px 10px black;
+    /* text-shadow: 30px 30px 30px black; */
 }
 /* ***************** MAIN *********************** */
 main{ /*main solo para index.html*/
@@ -114,7 +116,12 @@ main{ /*main solo para index.html*/
     padding: 10px;
     text-align: center;
     font-style: italic;
-    background-color: var(--myColor);    
+    background-color: var(--myColor);  
+    box-shadow: 10px 10px 10px black;  
+}
+.caja-novedad:hover{
+    background-color: rgb(99, 212, 99);
+    transition-duration: 0.8s;
 }
 .caja-novedad img{
     width: 90%;
@@ -139,6 +146,11 @@ main{ /*main solo para index.html*/
     color: blue;
     text-align: center;
 }
+.contenedor-testimonios a:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    
+}
 .caja-testimonio{
     border: dashed 1px purple;
     border-radius: 10px;
@@ -146,6 +158,7 @@ main{ /*main solo para index.html*/
     color:blue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style:oblique;
+    background: linear-gradient(var(--myColor),skyblue)
 }
 .caja-testimonio p span{
     color:orangered;
@@ -284,6 +297,7 @@ footer .topnav nav a{
     border: solid 2px black;
     width: 40vw;
     font-size: 1.5rem;
+    background:radial-gradient(var(--myColor) 60%, skyblue);  
 }
 .caja_maps{
     border: solid 3px red;
@@ -292,7 +306,10 @@ footer .topnav nav a{
     padding: 10px;
     background-color: greenyellow;
 }
-
+.caja_maps:hover{
+    background-color: red;
+    transition-duration: 1s;
+}
 
 
 
