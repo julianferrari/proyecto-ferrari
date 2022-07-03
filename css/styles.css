@@ -291,7 +291,7 @@ footer .topnav nav a{
     /* ---- INDEX ----*/
    
     .caja-novedad{
-        width: 50vh;
+        width: 50vw;
     }
     .contenedor-testimonios{
         flex-direction: column;
