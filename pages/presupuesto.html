@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Solicitar Presupuesto</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
@@ -16,24 +18,43 @@
 <body>
     <div class="grillas">
         <header>
-            <a href="../index.html"><img class="banner" src="../assets/images/banner.png" alt="Banner CIMA"/></a>
-            <nav> 
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#seccion_novedades">Novedades</a></li> <!-- Items de la lista -->
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="../index.html#seccion_horarios">Horarios de Atención</a></li>
-                    <li>
-                        <a href="">Trámites</a>
-                        <ul>
-                            <li><a href="turno.html">Turnos</a></li>
-                            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">CIMA Laboratorio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-fill w-100">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#seccion_novedades">Novedades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#seccion_horarios">Horarios</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Trámites
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="turno.html">Pedir Turno</a></li>
+                          <li><a class="dropdown-item" href="presupuesto.html">Solicitar Presupuesto</a></li>
+                          <li><a class="dropdown-item" href="#">Ver mis resultados</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#footer">Contacto</a></li>
-                </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
-            <hr>
         </header>
 
         <main class="main-tramite">
@@ -41,7 +62,7 @@
             <section class="cover">
                 <div class="cover-propiedades">
                     <img src="../assets/images/labo05.jpg" alt="Laboratorio">
-                    <div class="texto-encima">Presupuesto</div>
+                    <!-- <div class="texto-encima">Presupuesto</div> -->
                 </div>
             </section>
 
@@ -71,11 +92,12 @@
                         <option value="otra">Otra...</option>
                     </select>
                     <label for="campo_estudio">¿Qué tipo de estudio quiere realizar?</label>
-                    <div class="contenedor-radio_button">
-                        <div class="radio_button"><input name="opc1" type="radio" name="estudio" value="preocupacional" id="campo_estudio">Para Exámenes Preocupacionales</div>
-                        <div class="radio_button"><input name="opc2" type="radio" name="estudio" value="art" id="campo_estudio">Por Accidentes/Enfermedades (ART)</div>
-                        <div class="radio_button"><input name="opc3" type="radio" name="estudio" value="riesgo" id="campo_estudio">Para Trabajos de Riesgo</div>
-                        <div class="radio_button"><input name="opc4" type="radio" name="estudio" value="otros" id="campo_estudio">Otros</div>
+                    <div class="contenedor-checkbox">                        
+                        <div class="check_box"><input name="opc1" type="checkbox" name="estudio" value="preocupacional" id="campo_estudio"><label for="">Para Exámenes Preocupacionales</label></div>
+                        <div class="check_box"><input name="opc2" type="checkbox" name="estudio" value="art" id="campo_estudio"><label for="">Por Accidentes/Enfermedades (ART)</label></div>
+                        <div class="check_box"><input name="opc3" type="checkbox" name="estudio" value="riesgo" id="campo_estudio"><label for="">Para Trabajos de Riesgo</label></div>
+                        <div class="check_box"><input name="opc4" type="checkbox" name="estudio" value="otros" id="campo_estudio"><label for="">Otros</label></div>
+                        
                     </div>
                     <label for="campo_mensaje">Mensaje</label>
                     <textarea name="mensaje" id="campo_mensaje" cols="30" rows="10" placeholder="Detalle del presupuesto que quiere realizar..."></textarea>
@@ -108,6 +130,8 @@
             </div>        
         </footer>
     </div>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>
