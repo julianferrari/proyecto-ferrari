@@ -61,7 +61,8 @@ main{
 }
 .contenedor-novedades{ /*FLEX*/
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    /* justify-content: space-around; */
     padding: 10px;
 }
 .caja-novedad{ /*BOX MOD*/
@@ -87,7 +88,8 @@ main{
     height: 300px;
 }
 .caja-novedad p{
-    text-align: justify;
+    text-align: center;
+    font-size: 1.5rem;
 }
 /* **************** SECTION TESTIMONIOS ******************* */
 .testimonios{
