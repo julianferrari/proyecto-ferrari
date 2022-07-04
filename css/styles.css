@@ -312,7 +312,10 @@ footer .topnav nav a{
         justify-content: center;
     }
     .ubicacion .caja-texto{
-        width: auto;
+        width: 100%;
+    }
+    .ubicacion-mapa iframe{
+        width: 100%;
     }
 }
 
@@ -340,14 +343,14 @@ footer .topnav nav a{
         flex-wrap: nowrap; 
     }
     .galeria .contenedor-galeria img{
-        width:auto;
+        width:100%;
         height:auto;
     }
     /* ---- TURNOS Y TRAMITES ---- */
   
     /* ---- UBICACION ----*/
     .ubicacion .caja-texto{
-        width: auto;
+        width: 100%;
         font-size: 1rem;
     }
 }
