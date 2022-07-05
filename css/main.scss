@@ -1,0 +1,173 @@
+@import "utilities/global-setting";
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "cover cover"
+    "novedades novedades"
+    "horarios testimonios";
+}
+
+.cover{
+    grid-area: cover;
+    img{
+        width: 100;
+    }
+    h5{
+        text-shadow:  0px 0px 10px black;
+    }
+    p{
+        text-shadow:  0px 0px 10px black;
+    }
+}
+
+.novedades{
+    grid-area: novedades;
+    .contenedor-novedades{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .caja-novedad{
+        width: 50vw;
+        border: solid 2px black;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        font-style: italic;
+        background-color: var(--myColor);  
+        box-shadow: 0px 10px 10px black;  
+        &:hover{
+            background-color: rgb(99, 212, 99);
+            transition-duration: 0.8s;
+        }
+        h2{
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        img{
+            width: 80%;
+            height: 300px;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5rem; 
+        }
+    }
+}
+
+.testimonios{
+    grid-area: testimonios;
+    .contenedor-testimonios{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+    }
+    i{
+        font-size: 3rem;
+        color: blue;
+    }
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: blue;
+        text-align: center;
+        &:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+        }
+    }
+    .caja-testimonio{
+        border: dashed 1px purple;
+        border-radius: 10px;
+        padding: 5px;
+        color:blue;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style:oblique;
+        background: linear-gradient(var(--myColor),skyblue);
+        p span{
+            color:orangered;
+            font-weight: bold;
+        }
+    }
+}
+
+.horarios{
+    grid-area: horarios;
+    background-color: var(--myColor);
+    table{
+        margin: auto;
+        font-size:medium;
+        border-color: black;
+        border-width: 3px;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 3px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    .celdaColor{
+        background-color: purple;
+        font-weight: bold;
+    }
+    .celdaCursiva{
+        font-style: italic;
+    }
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    text-align: center;
+    p a{
+        text-decoration: none;
+    }
+    span{
+        color: orange;
+        font-weight: bold;
+    }
+    .redes-sociales{
+        display: inline-block;  
+        padding-top: 5px;
+        padding-bottom: 5px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        i{
+            font-size: 1.5rem;
+        }
+    }
+    .topnav{
+        background-color: black;
+        padding-top: 10px;
+        nav{
+            width: fit-content;
+            margin: auto;
+            a{
+                text-decoration: none;
+                color: orange;
+                font-weight: bold;
+                font-size: medium;
+            }
+        }
+    }
+}
+
+
+/* PARA LAS OTRAS PAGINAS*/
+/* GALERIA */
+@import "other-pages/galeria";
+/* TURNOS Y PRESUPUESTO */
+@import "other-pages/tramites";
+/* UBICACION */
+@import "other-pages/ubicacion";
+
+/* PARA HACERLO RESPONSIVE */
+@import "utilities/responsive-setting";

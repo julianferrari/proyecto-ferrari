@@ -1,0 +1,37 @@
+.main-tramite{
+    display: flex;
+    flex-direction: column;
+    .tramite{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+        .contenedor-tramite{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            input{
+                width: auto;
+            }
+            textarea{
+                width: 50%;
+            }
+            .contenedor-checkbox{
+                justify-content: left;
+                text-align: left;
+                input:checked + label{
+                    font-weight: bold;
+                    color:purple;
+                }
+            }
+            .check_box{
+                border: dashed 1px gray;
+                font-weight: normal;
+            }
+            input:focus{
+                background-color: var(--myColor);
+            }
+        }       
+    }
+}

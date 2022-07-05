@@ -52,10 +52,9 @@ footer .topnav nav a { text-decoration: none; color: orange; font-weight: bold; 
 /* PARA LAS OTRAS PAGINAS*/
 /* GALERIA */
 .main-galeria { display: flex; flex-direction: column; text-align: center; }
-
-.galeria { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
-.galeria .contenedor-galeria { border: 2px solid black; }
-.galeria .contenedor-galeria img { width: 30vw; height: 200px; }
+.main-galeria .galeria { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+.main-galeria .galeria .contenedor-galeria { border: 2px solid black; }
+.main-galeria .galeria .contenedor-galeria img { width: 30vw; height: 200px; }
 
 /* TURNOS Y PRESUPUESTO */
 .main-tramite { display: flex; flex-direction: column; }

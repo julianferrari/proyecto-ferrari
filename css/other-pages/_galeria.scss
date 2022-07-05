@@ -1,0 +1,18 @@
+.main-galeria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .contenedor-galeria{
+            border: 2px solid black;    
+            img{
+                width:30vw;
+                height:200px;
+            }
+        }
+    }
+}

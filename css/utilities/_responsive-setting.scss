@@ -1,0 +1,62 @@
+@media (max-width:768px){
+    /* ---- INDEX ----*/
+    .caja-novedad{
+        width: 50vw;
+    }
+    .contenedor-testimonios{
+        flex-direction: column;
+    }
+    /* ---- GALERIA ---- */
+    .galeria .contenedor-galeria img{
+        width:40vw;
+    }
+    /* ---- TURNOS Y PRESUPUESTO ---- */
+    .tramite .contenedor-tramite textarea{
+        width: 80%;
+    }
+    /* ---- UBICACION ----*/
+    .ubicacion{
+        flex-direction: column;
+        justify-content: center;
+        .caja-texto{
+            width: 100%;
+        }
+        .ubicacion-mapa iframe{
+            width: 100%;
+        }
+    }    
+}
+
+@media (max-width:420px){
+    /* ---- INDEX ----*/
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "cover"
+        "novedades"
+        "testimonios"
+        "horarios";
+        .contenedor-novedades{
+            flex-direction: column;
+            padding: 0;
+            .caja-novedad{
+                width:auto;
+            }
+        }
+    }    
+    /* ---- GALERIA ---- */
+    .galeria{
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        .contenedor-galeria img{
+            width:100%;
+            height:auto;
+        }
+    }
+    /* ---- UBICACION ----*/
+    .ubicacion .caja-texto{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
