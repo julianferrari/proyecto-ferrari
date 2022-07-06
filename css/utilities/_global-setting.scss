@@ -11,11 +11,17 @@ html{scroll-behavior: smooth;}
     --myColor: hsla(300, 76%, 72%, 0.459);
 }
 
+$colorFondo: black;
+
+@mixin estilo-titulos($colorTexto, $x:0px, $y:10px, $z:10px){
+    text-shadow: $x $y $z $colorTexto;
+}
+
 h1{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-shadow: 0px 10px 10px black;
+    @include estilo-titulos($colorFondo)
 }
 
 .nav-item a:hover{

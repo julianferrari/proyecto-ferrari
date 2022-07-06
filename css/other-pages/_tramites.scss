@@ -1,6 +1,9 @@
 .main-tramite{
     display: flex;
     flex-direction: column;
+    .cover img{
+        width: 100%;
+    }
     .tramite{
         display: flex;
         flex-direction: column;

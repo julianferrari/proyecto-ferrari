@@ -1,6 +1,9 @@
 .main-ubicacion{
     display: flex;
     flex-direction: column;
+    .cover img{
+        width: 100%;
+    }
     .ubicacion{
         display: flex;
         flex-direction: row;

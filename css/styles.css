@@ -52,13 +52,14 @@ footer .topnav nav a { text-decoration: none; color: orange; font-weight: bold; 
 /* PARA LAS OTRAS PAGINAS*/
 /* GALERIA */
 .main-galeria { display: flex; flex-direction: column; text-align: center; }
-
-.galeria { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
-.galeria .contenedor-galeria { border: 2px solid black; }
-.galeria .contenedor-galeria img { width: 30vw; height: 200px; }
+.main-galeria .cover img { width: 100%; }
+.main-galeria .galeria { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+.main-galeria .galeria .contenedor-galeria { border: 2px solid black; }
+.main-galeria .galeria .contenedor-galeria img { width: 30vw; height: 200px; }
 
 /* TURNOS Y PRESUPUESTO */
 .main-tramite { display: flex; flex-direction: column; }
+.main-tramite .cover img { width: 100%; }
 .main-tramite .tramite { display: flex; flex-direction: column; text-align: center; font-weight: bold; }
 .main-tramite .tramite .contenedor-tramite { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .main-tramite .tramite .contenedor-tramite input { width: auto; }
@@ -70,6 +71,7 @@ footer .topnav nav a { text-decoration: none; color: orange; font-weight: bold; 
 
 /* UBICACION */
 .main-ubicacion { display: flex; flex-direction: column; }
+.main-ubicacion .cover img { width: 100%; }
 .main-ubicacion .ubicacion { display: flex; flex-direction: row; justify-content: center; }
 .main-ubicacion .ubicacion .caja-texto { border: solid 2px black; width: 40vw; font-size: 1.5rem; background: radial-gradient(var(--myColor) 60%, skyblue); }
 .main-ubicacion .ubicacion .caja_maps { border: solid 3px red; width: fit-content; margin: auto; padding: 10px; background-color: greenyellow; }
@@ -77,22 +79,22 @@ footer .topnav nav a { text-decoration: none; color: orange; font-weight: bold; 
 
 /* PARA HACERLO RESPONSIVE */
 @media (max-width: 768px) { /* ---- INDEX ----*/
-  .caja-novedad { width: 50vw; }
-  .contenedor-testimonios { flex-direction: column; }
+  .novedades .caja-novedad { width: 50vw; }
+  .testimonios .contenedor-testimonios { flex-direction: column; }
   /* ---- GALERIA ---- */
-  .galeria .contenedor-galeria img { width: 40vw; }
+  .main-galeria .galeria .contenedor-galeria img { width: 40vw; }
   /* ---- TURNOS Y PRESUPUESTO ---- */
-  .tramite .contenedor-tramite textarea { width: 80%; }
+  .main-tramite .tramite .contenedor-tramite textarea { width: 80%; }
   /* ---- UBICACION ----*/
-  .ubicacion { flex-direction: column; justify-content: center; }
-  .ubicacion .caja-texto { width: 100%; }
-  .ubicacion .ubicacion-mapa iframe { width: 100%; } }
+  .main-ubicacion .ubicacion { flex-direction: column; justify-content: center; }
+  .main-ubicacion .ubicacion .caja-texto { width: 100%; }
+  .main-ubicacion .ubicacion .ubicacion-mapa iframe { width: 100%; } }
 @media (max-width: 420px) { /* ---- INDEX ----*/
   main { grid-template-columns: 1fr; grid-template-rows: repeat(4, auto); grid-template-areas: "cover" "novedades" "testimonios" "horarios"; }
-  main .contenedor-novedades { flex-direction: column; padding: 0; }
-  main .contenedor-novedades .caja-novedad { width: auto; }
+  main .novedades .contenedor-novedades { flex-direction: column; padding: 0; }
+  main .novedades .contenedor-novedades .caja-novedad { width: auto; }
   /* ---- GALERIA ---- */
-  .galeria { flex-direction: column; flex-wrap: nowrap; }
-  .galeria .contenedor-galeria img { width: 100%; height: auto; }
+  .main-galeria .galeria { flex-direction: column; flex-wrap: nowrap; }
+  .main-galeria .galeria .contenedor-galeria img { width: 100%; height: auto; }
   /* ---- UBICACION ----*/
-  .ubicacion .caja-texto { width: 100%; font-size: 1rem; } }
+  .main-ubicacion .ubicacion .caja-texto { width: 100%; font-size: 1rem; } }
