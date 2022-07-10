@@ -15,12 +15,16 @@
             align-items: center;
             text-align: center;
             input{
-                width: auto;
+                width: 50%;
+            }
+            select{
+                width: 50%;
             }
             textarea{
                 width: 50%;
             }
             .contenedor-checkbox{
+                width: 50%;
                 justify-content: left;
                 text-align: left;
                 input:checked + label{
@@ -31,9 +35,12 @@
             .check_box{
                 border: dashed 1px gray;
                 font-weight: normal;
+                input{
+                    width: auto;
+                }
             }
             input:focus{
-                background-color: var(--myColor);
+                background-color: $colorPpal;
             }
         }       
     }

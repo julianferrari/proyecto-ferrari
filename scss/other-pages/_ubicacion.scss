@@ -12,7 +12,8 @@
             border: solid 2px black;
             width: 40vw;
             font-size: 1.5rem;
-            background:radial-gradient(var(--myColor) 60%, skyblue);  
+            background:radial-gradient($colorPpal 60%, $colorSecu);  
+            
         }
         .caja_maps{
             border: solid 3px red;

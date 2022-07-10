@@ -7,11 +7,16 @@
 
 html{scroll-behavior: smooth;}
 
-:root{/*Mi variable*/
-    --myColor: hsla(300, 76%, 72%, 0.459);
-}
-
+$colorPpal: hsla(300, 76%, 72%, 0.459);
+$colorSecu: skyblue;
 $colorFondo: black;
+
+$fondos: (
+    novedades_section: white,
+    horarios_section: $colorPpal,
+    testimonios_section: $colorSecu,
+    footer_section:  rgba(0, 0, 0, 0.822),
+);
 
 @mixin estilo-titulos($colorTexto, $x:0px, $y:10px, $z:10px){
     text-shadow: $x $y $z $colorTexto;
