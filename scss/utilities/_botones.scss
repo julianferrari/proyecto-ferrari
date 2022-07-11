@@ -1,0 +1,25 @@
+@mixin myBoton($colorFondo:white, $colorTexto:black, $radius:10px){
+    background-color: $colorFondo;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: $radius;
+    padding:2px;
+
+    a{
+        text-decoration: none;
+        color: $colorTexto;
+    }
+
+    &:hover{
+        filter: opacity(80%);
+    }
+}
+
+.boton_submit{
+    @include myBoton($colorPpal,blue,10px);
+}
+
+.boton_resultados{
+    @include myBoton($colorSecu,white,5px);
+}

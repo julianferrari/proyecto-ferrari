@@ -42,6 +42,14 @@
             input:focus{
                 background-color: $colorPpal;
             }
-        }       
+        } 
+        .mb-3{
+            width: 50%;
+            margin:auto;
+        }      
+        form .boton_resultados{
+            width: fit-content;
+            margin: auto;
+        }
     }
 }

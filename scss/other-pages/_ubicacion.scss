@@ -16,11 +16,9 @@
             
         }
         .caja_maps{
-            border: solid 3px red;
+            @include myBoton(greenyellow,black,0px);
             width: fit-content;
             margin: auto;
-            padding: 10px;
-            background-color: greenyellow;
             &:hover{
                 background-color: red;
                 transition-duration: 1s;

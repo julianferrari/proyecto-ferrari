@@ -23,6 +23,33 @@ h1 {
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "header" "main" "footer"; }
 
+/* BOTONES */
+.boton_submit {
+  background-color: rgba(238, 129, 238, 0.459);
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2px; }
+  .boton_submit a {
+    text-decoration: none;
+    color: blue; }
+  .boton_submit:hover {
+    filter: opacity(80%); }
+
+.boton_resultados {
+  background-color: skyblue;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px; }
+  .boton_resultados a {
+    text-decoration: none;
+    color: white; }
+  .boton_resultados:hover {
+    filter: opacity(80%); }
+
 /* INDEX */
 main {
   grid-area: main;
@@ -167,7 +194,7 @@ footer {
         width: 30vw;
         height: 200px; }
 
-/* TURNOS Y PRESUPUESTO */
+/* TURNOS, PRESUPUESTO Y RESULTADOS */
 .main-tramite {
   display: flex;
   flex-direction: column; }
@@ -203,6 +230,12 @@ footer {
           width: auto; }
       .main-tramite .tramite .contenedor-tramite input:focus {
         background-color: rgba(238, 129, 238, 0.459); }
+    .main-tramite .tramite .mb-3 {
+      width: 50%;
+      margin: auto; }
+    .main-tramite .tramite form .boton_resultados {
+      width: fit-content;
+      margin: auto; }
 
 /* UBICACION */
 .main-ubicacion {
@@ -220,11 +253,19 @@ footer {
       font-size: 1.5rem;
       background: radial-gradient(rgba(238, 129, 238, 0.459) 60%, skyblue); }
     .main-ubicacion .ubicacion .caja_maps {
-      border: solid 3px red;
+      background-color: greenyellow;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 0px;
+      padding: 2px;
       width: fit-content;
-      margin: auto;
-      padding: 10px;
-      background-color: greenyellow; }
+      margin: auto; }
+      .main-ubicacion .ubicacion .caja_maps a {
+        text-decoration: none;
+        color: black; }
+      .main-ubicacion .ubicacion .caja_maps:hover {
+        filter: opacity(80%); }
       .main-ubicacion .ubicacion .caja_maps:hover {
         background-color: red;
         transition-duration: 1s; }
