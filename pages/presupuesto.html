@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="description" content="Servicio de presupuesto para empresas.">
-    <title>Solicitar Presupuesto</title>
+    <title>CIMA Solicitar Presupuesto</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
@@ -62,7 +62,7 @@
             
             <section class="cover">
                 <div class="cover-propiedades">
-                    <img src="../assets/images/labo05.jpg" alt="Laboratorio">
+                    <img src="../assets/images/labo05.jpg" alt="Laboratorio Presupuesto">
                     <!-- <div class="texto-encima">Presupuesto</div> -->
                 </div>
             </section>
@@ -70,18 +70,18 @@
             <section class="tramite">
                 <h1>Solicitar Presupuesto</h1>
                 <form class="contenedor-tramite">
-                    <label for="campo_nombre">Nombre y Apellido:</label>
-                    <input name="nombre" type="text" id="campo_nombre" placeholder="Nombre y Apellido">
-                    <label for="campo_tel">Teléfono:</label>
-                    <input name="telefono" type="tel" id="campo_tel" placeholder="Ej: +54929112345678">
-                    <label for="campo_mail">E-Mail:</label>
-                    <input name="email" type="email" id="campo_mail" placeholder="ejemplo@gmail.com">
+                    <label for="campo_nombre_pres">Nombre y Apellido:</label>
+                    <input name="nombre" type="text" id="campo_nombre_pres" placeholder="Nombre y Apellido">
+                    <label for="campo_tel_pres">Teléfono:</label>
+                    <input name="telefono" type="tel" id="campo_tel_pres" placeholder="Ej: +54929112345678">
+                    <label for="campo_mail_pres">E-Mail:</label>
+                    <input name="email" type="email" id="campo_mail_pres" placeholder="ejemplo@gmail.com">
                     <label for="campo_empresa">Empresa:</label>
                     <input name="empresa" type="text" id="campo_empresa" placeholder="Nombre o abreviatura">
                     <label for="campo_empleados">Cantidad de Empleados:</label>
                     <input name="empleados" type="text" id="campo_empleados" placeholder="N° aproximado">
-                    <label for="campo_obra">Obra Social</label>
-                    <select name="obra" id="campo_obra">
+                    <label for="campo_obra_pres">Obra Social</label>
+                    <select name="obra" id="campo_obra_pres">
                         <option value="pami">PAMI</option>
                         <option value="iosfa">IOSFA</option>
                         <option value="swissmedical">SWISS MEDICAL</option>
@@ -94,16 +94,13 @@
                     </select>
                     <label for="campo_estudio">¿Qué tipo de estudio quiere realizar?</label>
                     <div class="contenedor-checkbox">                        
-                        <div class="check_box"><input name="opc1" type="checkbox" name="estudio" value="preocupacional" id="campo_estudio"><label for="">Para Exámenes Preocupacionales</label></div>
-                        <div class="check_box"><input name="opc2" type="checkbox" name="estudio" value="art" id="campo_estudio"><label for="">Por Accidentes/Enfermedades (ART)</label></div>
-                        <div class="check_box"><input name="opc3" type="checkbox" name="estudio" value="riesgo" id="campo_estudio"><label for="">Para Trabajos de Riesgo</label></div>
-                        <div class="check_box"><input name="opc4" type="checkbox" name="estudio" value="otros" id="campo_estudio"><label for="">Otros</label></div>
-                        
+                        <div class="check_box"><input name="opc1" type="checkbox" value="preocupacional" id="campo_estudio"><label for="">Para Exámenes Preocupacionales</label></div>
+                        <div class="check_box"><input name="opc2" type="checkbox" value="art" id="campo_estudio"><label for="">Por Accidentes/Enfermedades (ART)</label></div>
+                        <div class="check_box"><input name="opc3" type="checkbox" value="riesgo" id="campo_estudio"><label for="">Para Trabajos de Riesgo</label></div>
+                        <div class="check_box"><input name="opc4" type="checkbox" value="otros" id="campo_estudio"><label for="">Otros</label></div>                
                     </div>
-                    <label for="campo_mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="campo_mensaje" cols="30" rows="10" placeholder="Detalle del presupuesto que quiere realizar..."></textarea>
-                    <!-- <div class="botones"><input type="submit" value="SOLICITAR PRESUPUESTO"> -->
-                    <!-- <input type="reset" value="Borrar Datos"></div> -->
+                    <label for="campo_mensaje_pres">Mensaje</label>
+                    <textarea name="mensaje" id="campo_mensaje_pres" cols="30" rows="10" placeholder="Detalle del presupuesto que quiere realizar..."></textarea>
                     <div class="boton_submit"><a href="">PRESUPUESTAR</a></div>
                 </form>
             </section>
@@ -134,6 +131,6 @@
     </div>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-</body>
 
+</body>
 </html>

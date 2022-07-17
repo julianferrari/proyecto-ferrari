@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="description" content="Se otorgan turnos online. Rápidez y eficiencia en la atención.">
-    <title>Solicitar Turno</title>
+    <title>CIMA Solicitar Turno</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
@@ -61,24 +61,23 @@
         <main class="main-tramite">
             <section class="cover">
                 <div class="cover-propiedades">
-                    <img src="../assets/images/labo04.jpg" alt="Laboratorio">
-                    <!-- <div class="texto-encima">Turnos</div> -->
+                    <img src="../assets/images/labo04.jpg" alt="Laboratorio Turnos">
                 </div>
             </section>
 
             <section class="tramite">
                 <h1>Solicitar Turno</h1>
                 <form class="contenedor-tramite">
-                    <label for="campo_nombre">Nombre y Apellido:</label>
-                    <input name="nombre" type="text" id="campo_nombre" placeholder="Nombre y Apellido">
-                    <label for="campo_dni">Documento:</label>
-                    <input name="dni" type="number" id="campo_dni" placeholder="Sin puntos; solo números">
-                    <label for="campo_tel">Teléfono:</label>
-                    <input name="tel" type="tel" id="campo_tel" placeholder="Ej: +5429112345678">
-                    <label for="campo_mail">E-Mail:</label>
-                    <input name="email" type="email" id="campo_mail" placeholder="ejemplo@gmail.com">
-                    <label for="campo_obra">Obra Social</label>
-                    <select name="obra" id="campo_obra">
+                    <label for="campo_nombre_turno">Nombre y Apellido:</label>
+                    <input name="nombre" type="text" id="campo_nombre_turno" placeholder="Nombre y Apellido">
+                    <label for="campo_dni_turno">Documento:</label>
+                    <input name="dni" type="number" id="campo_dni_turno" placeholder="Sin puntos; solo números">
+                    <label for="campo_tel_turno">Teléfono:</label>
+                    <input name="tel" type="tel" id="campo_tel_turno" placeholder="Ej: +5429112345678">
+                    <label for="campo_mail_turno">E-Mail:</label>
+                    <input name="email" type="email" id="campo_mail_turno" placeholder="ejemplo@gmail.com">
+                    <label for="campo_obra_turno">Obra Social</label>
+                    <select name="obra" id="campo_obra_turno">
                         <option value="pami">PAMI</option>
                         <option value="iosfa">IOSFA</option>
                         <option value="swissmedical">SWISS MEDICAL</option>
@@ -91,15 +90,9 @@
                     </select>
                     <label for="campo_turno">Elija un Turno</label>
                     <input name="turno" type="date" id="campo_turno">
-                    <label for="campo_mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="campo_mensaje" cols="30" rows="10" placeholder="Otra información relevante..."></textarea>
-                    
-                    <!-- <div class="botones"><input type="submit" value="SOLICITAR TURNO">
-                    <input type="reset" value="Borrar Datos"></div> -->
-
-                    <div class="boton_submit"><a href="">SOLICITAR TURNO</a></div>
-
-                
+                    <label for="campo_mensaje_turno">Mensaje</label>
+                    <textarea name="mensaje" id="campo_mensaje_turno" cols="30" rows="10" placeholder="Otra información relevante..."></textarea>
+                    <div class="boton_submit"><a href="">SOLICITAR TURNO</a></div>                
                   </form>
             </section>
         </main>
@@ -129,6 +122,6 @@
     </div>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-</body>
 
+</body>
 </html>
