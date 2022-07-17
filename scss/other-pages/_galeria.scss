@@ -14,7 +14,11 @@
             border: 2px solid black;    
             img{
                 width:30vw;
-                height:200px;
+                height:auto;
+            }
+            &:hover{
+                transform: scale(0.98);
+                transition-duration: 0.25s;
             }
         }
     }

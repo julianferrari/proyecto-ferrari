@@ -14,13 +14,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            input{
-                width: 50%;
-            }
-            select{
-                width: 50%;
-            }
-            textarea{
+            input, select, textarea{
                 width: 50%;
             }
             .contenedor-checkbox{

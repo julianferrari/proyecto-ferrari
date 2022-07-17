@@ -12,8 +12,9 @@
             border: solid 2px black;
             width: 40vw;
             font-size: 1.5rem;
-            background:radial-gradient($colorPpal 60%, $colorSecu);  
-            
+            background:radial-gradient($colorPpal 60%, $colorSecu);      
+            text-align: center;
+            p{padding-top: 25%;}           
         }
         .caja_maps{
             @include myBoton(greenyellow,black,0px);

@@ -40,7 +40,6 @@ main{
         border-radius: 5px;
         padding: 10px;
         text-align: center;
-        font-style: italic;
         background-color: $colorPpal;  
         box-shadow: 0px 10px 10px black; 
         &:hover{
@@ -58,6 +57,16 @@ main{
         p{
             text-align: center;
             font-size: 1.5rem; 
+            font-style: italic;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                &:hover{
+                    font-weight: bolder;
+                    color: purple;
+                }
+            }
         }
     }
 }
@@ -91,11 +100,14 @@ main{
         color:blue;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-style:oblique;
-        /*background: linear-gradient($colorPpal 75%,$colorSecu);*/
         background-color: $colorPpal;
         p span{
             color:orangered;
             font-weight: bold;
+        }
+        &:hover{
+            transform: scale(1.2);
+            transition-duration: 0.25s;
         }
     }
 }
