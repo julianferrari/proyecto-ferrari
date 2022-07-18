@@ -76,10 +76,7 @@ main {
 .cover img {
   width: 100;
 }
-.cover h5 {
-  text-shadow: 0px 0px 10px black;
-}
-.cover p {
+.cover h5, .cover p {
   text-shadow: 0px 0px 10px black;
 }
 
