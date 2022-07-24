@@ -1,8 +1,8 @@
 @mixin myBoton($colorFondo:white, $colorTexto:black, $radius:10px){
-    background-color: $colorFondo;
+    background-color: none;
     text-align: center;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid $colorTexto;
     border-radius: $radius;
     padding:2px;
 
@@ -12,14 +12,19 @@
     }
 
     &:hover{
-        filter: opacity(80%);
+        background-color: $colorFondo;
+        a{
+            color: white;
+        }
+        transition-duration: 0.5s;
+            
     }
 }
 
 .boton_submit{
-    @include myBoton($colorPpal,blue,10px);
+    @include myBoton(purple,purple,10px);
 }
 
 .boton_resultados{
-    @include myBoton($colorSecu,white,5px);
+    @include myBoton($colorSecu,blue,5px);
 }

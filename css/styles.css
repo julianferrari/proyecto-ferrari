@@ -30,35 +30,43 @@ h1 {
 
 /* BOTONES */
 .boton_submit {
-  background-color: hsla(300deg, 76%, 72%, 0.459);
+  background-color: none;
   text-align: center;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid purple;
   border-radius: 10px;
   padding: 2px;
 }
 .boton_submit a {
   text-decoration: none;
-  color: blue;
+  color: purple;
 }
 .boton_submit:hover {
-  filter: opacity(80%);
+  background-color: purple;
+  transition-duration: 0.5s;
+}
+.boton_submit:hover a {
+  color: white;
 }
 
 .boton_resultados {
-  background-color: skyblue;
+  background-color: none;
   text-align: center;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid blue;
   border-radius: 5px;
   padding: 2px;
 }
 .boton_resultados a {
   text-decoration: none;
-  color: white;
+  color: blue;
 }
 .boton_resultados:hover {
-  filter: opacity(80%);
+  background-color: skyblue;
+  transition-duration: 0.5s;
+}
+.boton_resultados:hover a {
+  color: white;
 }
 
 /* INDEX */
@@ -307,6 +315,9 @@ footer .topnav nav a {
   width: fit-content;
   margin: auto;
 }
+.main-tramite .tramite img {
+  width: 100%;
+}
 
 /* UBICACION */
 .main-ubicacion {
@@ -332,7 +343,7 @@ footer .topnav nav a {
   padding-top: 25%;
 }
 .main-ubicacion .ubicacion .caja_maps {
-  background-color: greenyellow;
+  background-color: none;
   text-align: center;
   text-decoration: none;
   border: 1px solid black;
@@ -346,7 +357,11 @@ footer .topnav nav a {
   color: black;
 }
 .main-ubicacion .ubicacion .caja_maps:hover {
-  filter: opacity(80%);
+  background-color: greenyellow;
+  transition-duration: 0.5s;
+}
+.main-ubicacion .ubicacion .caja_maps:hover a {
+  color: white;
 }
 .main-ubicacion .ubicacion .caja_maps:hover {
   background-color: red;
