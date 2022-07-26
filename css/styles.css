@@ -91,7 +91,8 @@ main {
 .testimonios .contenedor-testimonios, .novedades .contenedor-novedades {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .novedades {
