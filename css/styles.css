@@ -100,7 +100,7 @@ main {
   background-color: white;
 }
 .novedades .caja-novedad {
-  width: 50vw;
+  width: 50%;
   border: solid 2px black;
   border-radius: 5px;
   padding: 10px;
@@ -140,7 +140,7 @@ main {
   background-color: skyblue;
 }
 .testimonios .contenedor-testimonios {
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
 }
 .testimonios i {
@@ -160,15 +160,19 @@ main {
 .testimonios .caja-testimonio {
   border: dashed 1px purple;
   border-radius: 10px;
-  padding: 5px;
-  color: blue;
+  padding: 2px;
+  color: black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-style: oblique;
+  font-weight: bold;
   background-color: hsla(300deg, 76%, 72%, 0.459);
+}
+.testimonios .caja-testimonio p {
+  font-size: 0.8rem;
 }
 .testimonios .caja-testimonio p span {
   color: orangered;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .testimonios .caja-testimonio:hover {
   transform: scale(1.2);
@@ -179,24 +183,20 @@ main {
   grid-area: horarios;
   background-color: hsla(300deg, 76%, 72%, 0.459);
 }
-.horarios table {
+.horarios .table {
+  width: 75%;
   margin: auto;
-  font-size: medium;
-  border-color: black;
-  border-width: 3px;
-  border-collapse: collapse;
 }
 .horarios th, .horarios td {
-  border: 3px solid black;
-  padding: 8px;
+  border: 1px solid black;
+  padding: 6px;
   text-align: center;
+  font-size: 1rem;
 }
 .horarios .celdaColor {
   background-color: purple;
   font-weight: bold;
-}
-.horarios .celdaCursiva {
-  font-style: italic;
+  color: white;
 }
 
 footer {
@@ -259,7 +259,8 @@ footer .topnav nav a {
 }
 .main-galeria .galeria .contenedor-galeria img {
   width: 30vw;
-  height: auto;
+  height: 50vh;
+  object-fit: cover;
 }
 .main-galeria .galeria .contenedor-galeria:hover {
   transform: scale(0.98);
@@ -373,10 +374,13 @@ footer .topnav nav a {
 @media (max-width: 768px) {
   /* ---- INDEX ----*/
   .novedades .caja-novedad {
-    width: 50vw;
+    width: 50%;
   }
   .testimonios .contenedor-testimonios {
     flex-direction: column;
+  }
+  .horarios th, td {
+    font-size: 0.8rem;
   }
   /* ---- GALERIA ---- */
   .main-galeria .galeria .contenedor-galeria img {
@@ -418,8 +422,7 @@ footer .topnav nav a {
     flex-wrap: nowrap;
   }
   .main-galeria .galeria .contenedor-galeria img {
-    width: 100%;
-    height: auto;
+    width: 98%;
   }
   /* ---- UBICACION ----*/
   .main-ubicacion .ubicacion .caja-texto {

@@ -33,7 +33,7 @@ main{
         @extend %box-info;
     }
     .caja-novedad{
-        width: 50vw;
+        width: 50%;
         border: solid 2px black;
         border-radius: 5px;
         padding: 10px;
@@ -74,7 +74,7 @@ main{
     background-color: map-get($fondos,"testimonios_section");
     .contenedor-testimonios{
         @extend %box-info;
-        padding: 20px;
+        padding: 10px;
         justify-content: center;
     }
     i{
@@ -94,14 +94,18 @@ main{
     .caja-testimonio{
         border: dashed 1px purple;
         border-radius: 10px;
-        padding: 5px;
-        color:blue;
+        padding: 2px;
+        color:black;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-style:oblique;
+        font-weight: bold;
         background-color: $colorPpal;
+        p{
+            font-size: 0.8rem;
+        }
         p span{
             color:orangered;
-            font-weight: bold;
+            font-weight: bolder;
         }
         &:hover{
             transform: scale(1.2);
@@ -113,24 +117,20 @@ main{
 .horarios{
     grid-area: horarios;
     background-color: map-get($fondos,"horarios_section");
-    table{
+    .table{
+        width: 75%;
         margin: auto;
-        font-size:medium;
-        border-color: black;
-        border-width: 3px;
-        border-collapse: collapse;
     }
     th, td{
-        border: 3px solid black;
-        padding: 8px;
+        border: 1px solid black;
+        padding: 6px;
         text-align: center;
+        font-size: 1rem;
     }
     .celdaColor{
         background-color: purple;
         font-weight: bold;
-    }
-    .celdaCursiva{
-        font-style: italic;
+        color: white;
     }
 }
 

@@ -1,10 +1,13 @@
 @media (max-width:768px){
     /* ---- INDEX ----*/
     .novedades .caja-novedad{
-        width: 50vw;
+        width: 50%;
     }
     .testimonios .contenedor-testimonios{
         flex-direction: column;
+    }
+    .horarios th, td{
+        font-size: 0.8rem;
     }
     /* ---- GALERIA ---- */
     .main-galeria .galeria .contenedor-galeria img{
@@ -50,8 +53,7 @@
         flex-direction: column;
         flex-wrap: nowrap; 
         .contenedor-galeria img{
-            width:100%;
-            height:auto;
+            width:98%;
         }
     }
     /* ---- UBICACION ----*/

@@ -63,11 +63,6 @@
     <main>
       <section class="cover">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./assets/images/carousel/carousel1.jpg" class="d-block w-100" alt="Calidad y Profesionalismo">
@@ -150,19 +145,47 @@
 
       <section class="horarios" id="seccion_horarios">
         <h1>Horarios de Atención</h1>
-        <table border="1">
-            <tr><!-- Fila 0 -->
-                <th class="celdaColor">Día</th> <!-- Columna 0 -->
-                <th class="celdaColor">Horario</th> <!-- Columna 1 -->
+        
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="celdaColor">Día</th>
+              <th scope="col" class="celdaColor">Horario</th>
             </tr>
-            <tr><td>Lunes</td><td>08:00 a 13:00</td></tr>
-            <tr><td>Martes</td><td>08:00 a 13:00</td></tr>
-            <tr><td>Miércoles</td><td>08:00 a 13:00</td></tr>
-            <tr><td>Jueves</td><td>08:00 a 13:00</td></tr>
-            <tr><td>Viernes</td><td>08:00 a 13:00</td></tr>
-            <tr><td class="celdaCursiva">Sábado</td><td class="celdaCursiva">Cerrado</td></tr>
-            <tr><td class="celdaCursiva">Domingo</td><td class="celdaCursiva">Cerrado</td></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Lunes</th>
+              <td>08:00 a 13:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Martes</th>
+              <td>08:00 a 13:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Miércoles</th>
+              <td>08:00 a 13:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Jueves</th>
+              <td>08:00 a 13:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Viernes</th>
+              <td>08:00 a 13:00</td>
+            </tr>
+            <tr>
+              <th scope="row">Sábado</th>
+              <td>Cerrado</td>
+            </tr>
+            <tr>
+              <th scope="row">Domingo</th>
+              <td>Cerrado</td>
+            </tr>
+            
+          </tbody>
         </table>
+
       </section>
 
     </main>
