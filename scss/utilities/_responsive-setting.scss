@@ -14,8 +14,13 @@
         width:40vw;
     }
     /* ---- TURNOS Y PRESUPUESTO ---- */
-    .main-tramite .tramite .contenedor-tramite textarea{
-        width: 80%;
+    .main-tramite .tramite .contenedor-tramite{ 
+        .contenedor-checkbox{
+            width: 95%;
+        }
+        textarea{
+            width: 95%;
+        }
     }
     /* ---- UBICACION ----*/
     .main-ubicacion .ubicacion{
@@ -57,6 +62,11 @@
             width:98%;
         }
     }
+    /* ---- TURNOS Y PRESUPUESTO ---- */
+    .main-tramite .tramite .contenedor-tramite .contenedor-checkbox label{
+        font-size: 0.8rem;    
+    }
+
     /* ---- UBICACION ----*/
     .main-ubicacion .ubicacion .caja-texto{
         width: 100%;

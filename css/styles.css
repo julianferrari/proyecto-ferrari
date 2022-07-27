@@ -288,10 +288,10 @@ footer .topnav nav a {
   text-align: center;
 }
 .main-tramite .tramite .contenedor-tramite input, .main-tramite .tramite .contenedor-tramite select, .main-tramite .tramite .contenedor-tramite textarea {
-  width: 50%;
+  width: 75%;
 }
 .main-tramite .tramite .contenedor-tramite .contenedor-checkbox {
-  width: 50%;
+  width: 75%;
   justify-content: left;
   text-align: left;
 }
@@ -387,8 +387,11 @@ footer .topnav nav a {
     width: 40vw;
   }
   /* ---- TURNOS Y PRESUPUESTO ---- */
+  .main-tramite .tramite .contenedor-tramite .contenedor-checkbox {
+    width: 95%;
+  }
   .main-tramite .tramite .contenedor-tramite textarea {
-    width: 80%;
+    width: 95%;
   }
   /* ---- UBICACION ----*/
   .main-ubicacion .ubicacion {
@@ -424,6 +427,10 @@ footer .topnav nav a {
   }
   .main-galeria .galeria .contenedor-galeria img {
     width: 98%;
+  }
+  /* ---- TURNOS Y PRESUPUESTO ---- */
+  .main-tramite .tramite .contenedor-tramite .contenedor-checkbox label {
+    font-size: 0.8rem;
   }
   /* ---- UBICACION ----*/
   .main-ubicacion .ubicacion .caja-texto {
