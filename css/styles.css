@@ -341,8 +341,8 @@ footer .topnav nav a {
   background: radial-gradient(hsla(300deg, 76%, 72%, 0.459) 60%, skyblue);
   text-align: center;
 }
-.main-ubicacion .ubicacion .caja-texto p {
-  padding-top: 25%;
+.main-ubicacion .ubicacion .ubicacion-mapa iframe {
+  width: 55vw;
 }
 .main-ubicacion .ubicacion .caja_maps {
   background-color: none;
@@ -397,6 +397,7 @@ footer .topnav nav a {
   }
   .main-ubicacion .ubicacion .caja-texto {
     width: 100%;
+    margin: auto;
   }
   .main-ubicacion .ubicacion .ubicacion-mapa iframe {
     width: 100%;
